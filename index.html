@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="이민혁의 개인 웹사이트. 관심 있는 주제를 살펴보고, 병합 정렬로 프로젝트 카드를 직접 정렬해 보세요.">
+  <title>이민혁 · A little about me</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#home" aria-label="이민혁 홈">MH<span>.</span>LEE</a>
+    <nav aria-label="주 메뉴"><a href="#about">소개</a><a href="#projects">프로젝트</a><a href="#algorithm">Merge sort <span class="nav-mark" aria-hidden="true">✳</span></a></nav>
+    <a class="github-link" href="https://github.com/lminh14" target="_blank" rel="noopener noreferrer">GitHub <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-line"></span> A LITTLE ABOUT ME</p>
+        <h1 id="hero-title">배우고, 만들고,<br><span class="serif accent">연결합니다.</span></h1>
+        <p class="hero-intro">안녕하세요, <strong>이민혁</strong>입니다.<br>이곳은 관심 있는 주제와 배움의 과정을<br class="desktop-break"> 하나씩 담아가는 작은 공간입니다.</p>
+        <a class="primary-link" href="#projects">프로젝트 둘러보기 <span aria-hidden="true">＋</span></a>
+        <div class="hero-caption"><span>PERSONAL WEBSITE</span><span>SEOUL, KR / 2026</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="작은 카드들이 나뉘었다가 정렬된 하나의 줄로 합쳐지는 병합 정렬 일러스트">
+        <div class="art-grid"></div>
+        <span class="art-label">A WAY TO MAKE SENSE OF THINGS</span>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-title serif">Order from<br><em>possibility.</em></div>
+        <div class="sort-tree" aria-hidden="true">
+          <div class="tree-row"><span class="tile tile-tilt">4</span><span class="tile tile-blue">1</span><span class="tile tile-tilt-alt">3</span><span class="tile">2</span></div>
+          <svg class="tree-lines" viewBox="0 0 360 60"><path d="M48 0V22H108V58M312 0V22H252V58M136 0V12H108M224 0V12H252"/></svg>
+          <div class="tree-row middle"><div class="tile-group"><span class="mini-tile">1</span><span class="mini-tile">4</span></div><div class="tile-group"><span class="mini-tile">2</span><span class="mini-tile">3</span></div></div>
+          <svg class="tree-lines lower" viewBox="0 0 360 60"><path d="M108 0V28H180V58M252 0V28H180"/></svg>
+          <div class="tree-result"><span>1</span><span>2</span><span>3</span><span>4</span><b>✓</b></div>
+        </div>
+        <div class="art-bottom"><span class="art-star">✳</span><span>BREAK IT DOWN.<br>BRING IT TOGETHER.</span><span class="art-pill">MERGE SORT</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="about wrap" aria-labelledby="about-title">
+      <div class="section-label"><span class="eyebrow">ABOUT & INTERESTS</span><h2 id="about-title">조금 더,<br>저에 대하여.</h2></div>
+      <div class="about-content"><p class="about-lead">작은 문제를 이해하는 것에서<br>새로운 배움이 시작된다고 생각합니다.</p><p class="muted">이 사이트에서는 자료구조와 알고리즘 수업의 주제를 웹에서 직접 만져볼 수 있는 기능으로 연결해 봅니다. 아래 프로젝트 카드는 그 주제를 담은 데모 콘텐츠입니다.</p><div class="interest-chips" aria-label="이 사이트에서 다루는 관심 주제"><span>자료구조</span><span>알고리즘</span><span>웹 만들기</span><span>배움의 기록</span></div></div>
+    </section>
+
+    <section id="projects" class="projects wrap" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">THINGS TO EXPLORE</p><h2 id="projects-title">관심을 프로젝트로<span class="accent">.</span></h2></div><p class="heading-note">배우고 싶은 주제를 모은 예시 카드입니다.<br>카드를 눌러 설명을 살펴보세요.</p></div>
+      <div class="project-toolbar"><div class="sort-buttons" role="group" aria-label="프로젝트 정렬 기준"><button class="sort-button" data-sort="date" aria-pressed="true">최신순</button><button class="sort-button" data-sort="title" aria-pressed="false">제목순 A–Z</button></div><div class="toolbar-extra"><span id="project-count">6 PROJECTS</span><button id="shuffle-button" class="text-button"><span aria-hidden="true">⤨</span> 섞기</button></div></div>
+      <p id="sort-status" class="sort-status" role="status" aria-live="polite"></p>
+      <div id="project-grid" class="project-grid"></div>
+      <noscript><p>카드 정렬 기능을 사용하려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+    </section>
+
+    <section id="algorithm" class="algorithm-section wrap" aria-labelledby="algorithm-title">
+      <div class="algorithm-intro"><p class="eyebrow">BEHIND THE INTERACTION</p><h2 id="algorithm-title">정렬 버튼 뒤에는<br><span class="serif">Merge sort.</span></h2><p>위 카드의 순서를 바꾸는 건 병합 정렬입니다. 목록을 작게 나누고, 두 목록의 앞부분을 비교하며 다시 합칩니다.</p><div class="complexity"><span>시간 복잡도 <strong>O(n log n)</strong></span><span>추가 공간 <strong>O(n)</strong></span></div><p class="trace-hint">복잡도는 병합 정렬 자체의 기준입니다. 이 데모는 단계별 기록을 별도로 저장합니다.</p><a class="source-link" href="https://github.com/lminh14/lminh.github.io" target="_blank" rel="noopener noreferrer">GitHub 저장소 보기</a></div>
+      <div class="trace-panel"><div class="trace-header"><span class="code-label">LIVE SORT TRACE</span><span id="trace-mode" class="trace-mode">최신순</span></div><div class="metrics"><div><span>카드 수</span><strong id="metric-size">6<span>개</span></strong></div><div><span>비교 횟수</span><strong id="metric-comparisons">0<span>회</span></strong></div><div><span>병합 횟수</span><strong id="metric-merges">0<span>회</span></strong></div></div><div class="trace-divider"></div><div class="trace-step-heading"><span id="step-label">병합 과정</span><div class="step-controls"><button id="step-prev" aria-label="이전 병합 단계">−</button><button id="step-next" aria-label="다음 병합 단계">＋</button></div></div><div id="trace-stage" class="trace-stage"></div><p class="trace-hint">정렬 버튼을 누르면 실제 실행 기록이 갱신됩니다.<br>＋와 −로 두 부분 목록이 합쳐지는 과정을 확인해 보세요.</p></div>
+    </section>
+    <section class="closing wrap"><span class="closing-star" aria-hidden="true">✳</span><div><p class="eyebrow">ALWAYS A WORK IN PROGRESS</p><p class="serif">다음 배움도, 이곳에서.</p></div><a href="#home">맨 위로</a></section>
+  </main>
+  <footer class="wrap"><a class="wordmark" href="#home">MH<span>.</span>LEE</a><span>이민혁의 개인 웹사이트</span><span>Built with curiosity · 2026</span></footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button id="dialog-close" class="dialog-close" aria-label="프로젝트 설명 닫기">×</button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="dialog-tags" class="dialog-tags"></div><p class="dialog-note">학습 주제를 소개하는 예시 프로젝트입니다.</p></dialog>
+</body>
+</html>
